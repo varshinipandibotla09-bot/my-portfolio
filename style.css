@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e272e;
+    padding: 15px 50px;
+}
+
+.logo {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #00cec9;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #00cec9, #0984e3);
+    color: white;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: #0984e3;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #dfe6e9;
+}
+
+section {
+    padding: 40px 50px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skill {
+    background: #0984e3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e272e;
+    color: white;
+}
