@@ -2,8 +2,10 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f4f6f9;
+    scroll-behavior: smooth;
 }
 
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -20,20 +22,23 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 0;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
     color: #00cec9;
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
     background: linear-gradient(to right, #00cec9, #0984e3);
     color: white;
 }
@@ -41,29 +46,48 @@ nav ul li a:hover {
 .profile-img {
     border-radius: 50%;
     width: 150px;
+    margin-bottom: 20px;
 }
 
-button {
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
     padding: 10px 20px;
-    border: none;
+    text-decoration: none;
     background: white;
     color: #0984e3;
     font-weight: bold;
-    cursor: pointer;
     border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    transition: 0.3s;
 }
 
-button:hover {
+.btn:hover {
     background: #dfe6e9;
 }
 
-section {
-    padding: 40px 50px;
+.resume-btn {
+    background: #1e272e;
+    color: white;
 }
 
+.resume-btn:hover {
+    background: #2f3640;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+}
+
+/* Skills */
 .skills-container {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .skill {
@@ -71,18 +95,54 @@ section {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
+.skill:hover {
+    transform: scale(1.05);
+}
+
+/* Projects */
 .project-card {
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc;
+    transition: 0.3s;
 }
 
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background: #1e272e;
     color: white;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+}
+   
