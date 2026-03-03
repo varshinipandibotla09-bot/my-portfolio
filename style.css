@@ -43,8 +43,8 @@ nav ul li a:hover {
     color: white;
 }
 
-.profile-img {
-    border-radius: 50%;
+.profile.img.jpeg {
+    border-radius: 60%;
     width: 150px;
     margin-bottom: 20px;
 }
@@ -146,3 +146,4 @@ footer {
     }
 }
    
+
